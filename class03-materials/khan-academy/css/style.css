@@ -1,0 +1,135 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+     /* border: 1px solid red; */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body li {
+     list-style: none;
+}
+
+body a {
+     text-decoration: none;
+}
+
+a {
+     color: rgb(0, 110, 255);
+     font-weight: bold;
+     font-size: 1em;
+}
+a:visited {
+     color: rgb(0, 110, 255);
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+     height: 70px;
+     border-bottom: 1px solid gray;
+     margin-bottom: 10px;
+}
+
+header > nav, 
+header h1 {
+     float: left;
+     width: 33.3%;
+}
+
+.left-nav,
+.right-nav {
+     display: inline;
+}
+
+.nav-li li {
+     float: left;
+     margin-right: 15px;
+}
+
+.left-nav {
+     display: inline;
+     padding-left: 150px;
+}
+
+header > h1 {
+     text-align: center;
+     font-size: 1.3em;
+}
+
+main > img,
+.main-section {
+     float: left;
+     width: 30%;
+}
+
+main > img {
+     float: left;
+     width: 50%;
+} 
+
+main > img {
+     padding-left: 300px;
+     height: 400px; 
+}
+
+.main-section {
+     float: left;
+     width: 50%;
+     height: 400px;
+     vertical-align: center;
+}
+
+.main-section > h2 {
+     text-align: start;
+     font-size: 3em;
+     padding: 0 200px 0 0;
+     margin: 50px 200px 0 10px;
+}
+
+.main-section p {
+     font-size: 1.3em;
+     text-align: start;
+     margin: 10px 200px 10px 10px;
+}
+
+.main-section nav {
+     margin: 20px 200px 10px 10px;
+     text-align: start;
+}
+
+.main-section nav > button {
+     margin-right: 10px;
+     color: white;
+     background: blue;
+     padding: 5px;
+     font-size: 1.3em;
+     width: 100px;
+}
+
+h3 {
+     float: left;
+     width: 100%;
+     text-align: center;
+     font-size: 2em;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

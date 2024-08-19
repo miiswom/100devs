@@ -1,0 +1,199 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     margin-top: 0;
+}
+
+li,
+a {
+     list-style: none;
+     text-decoration: none;
+}
+
+html {
+     background: #f5f9fc;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* --------- HEADER --------- */
+/* header > * {
+     border: 1px solid red;
+} */
+
+header,
+header img,
+header nav,
+header a {
+     float: left;
+}
+
+header {
+     padding: 0 40px;
+     width: 100%;
+     background: #f5f9fc;
+}
+
+.nav-links {
+     display: inline; 
+     width: 70%;
+}
+
+.nav-links li {
+     padding: 10px 30px;
+}
+
+.nav-links li:first-of-type {
+     padding-left:400px;
+}
+
+.nav-links li:last-of-type {
+     padding-right:400px;
+}
+
+.nav-links li {
+     float: left;
+}
+
+.button {
+     text-align: center;
+     background: #2c4458;
+     color: white;
+     padding: 5px 15px;
+     /* margin: 5px auto; */
+}
+
+/* --------- MAIN --------- */
+/* main > * {
+     border: 1px solid red;
+} */
+
+main,
+main section.top-left,
+main section.top-right,
+main section.bottom-sections,
+main section.bottom-sections .features {
+     float: left;
+}
+
+main {
+     width: 100%;
+     padding: 10px 30px;
+     color: #2c4458;
+     background: #f5f9fc;
+}
+
+main section.top-left,
+main section.top-right {
+     width: 50%;
+     /* margin-bottom: 50px; */
+}
+main section.top-right > img {
+     width: 100%;
+}
+
+main section.bottom-sections {
+     width: 100%;
+}
+
+main section.bottom-sections .features {
+     width: 25%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* --------- MAIN --------- */
+section.top-left {
+     padding-right: 250px;
+     text-align: left;
+     color: #2c4458;
+}
+
+section.top-left span {
+     font-size: 20px;
+}
+
+section.top-left h1 {
+     font-size: 3.7em;
+     font-weight: bold;
+     padding-right: 30px;
+}
+
+section.top-left form input {
+     background: #e2eaf0;
+     color: #2c4458;
+     padding: 5px 5px;
+     margin-right: 0;
+     position: relative;
+     border: 0;
+     width: 80%;
+}
+
+section.top-left form a.button {
+     position: absolute;
+     left: 23.3%;
+}
+
+section.top-left p {
+     padding-right: 220px;
+}
+
+.bottom-sections {
+     margin: 30px 1px;
+}
+
+.features p {
+     line-height: 1.5em;
+     text-align: start;
+     padding-right: 50px;
+}
+
+.bottom-sections {
+     padding: auto 50%;
+}
+
+section.last-section {
+     width: 100%;
+     background: white;
+}
+
+section.last-section h2 {
+     width: 40%;
+     font-size: 3.7em;
+     font-weight: bold;
+     padding-right: 30px;
+     color: #2c4458;
+     padding: 10px 30px;
+}
+
+section.last-section p {
+     width: 40%;
+     color: #2c4458;
+     padding: 10px 30px;
+}

@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+/* header, section, footer {
+} */
+
+header, footer {
+    /* float: left; */
+    width: 100%;
+    height: 100px;
+}
+
+header {
+    background: orange;
+}
+
+footer {
+    clear: both;
+    background: blueviolet;
+}
+
+section {
+    float: left;
+    width: 33.3333%;
+    background: lime;
+    height: 300px;
+    border: 1px solid grey;
+}
+

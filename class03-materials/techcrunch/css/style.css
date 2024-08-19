@@ -1,0 +1,132 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+li {
+     list-style: none;
+     text-decoration: none;
+     padding: 3px 0 3px 0;
+}
+img {
+     max-width: 100%;
+     /* padding-left: 30px; */
+}
+
+header nav {
+     display: inline;
+}
+
+/* header * {
+     border: 1px solid red;
+} */
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header nav{
+     float: left;
+     height: 100%;
+     width: 15%;
+     padding: 50px 0 0 0;
+     position: relative;
+}
+
+header img {
+     float: left;
+     width: 35px;
+     position: absolute;
+     left: 100px;
+     bottom: 300px;
+}
+
+.main-section {
+     float: left;
+     width: 50%;
+     margin: 0 10px 0 0;
+}
+
+.main-section-right {
+     float: left;
+     width: 30%;
+     height: 50%;
+}
+
+.bottom-section {
+     float: right;
+     padding-left: 240px;
+     padding-right: 20px;
+
+}
+
+.bottom-section section {
+     display: inline;
+}
+
+.title-container,
+.bottom-section section p,
+.bottom-section section img {
+     float: left;
+     width: 32%;
+} 
+
+.bottom-section > span {
+     float: left;
+     width: 100%;
+     text-align: start;
+     font-size: 1.3em;
+     font-weight: bold;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+header form input{
+     max-width: 120px;
+}
+.main-section h2 {
+     font-size: 16px;
+}
+
+.main-section-right section {
+     border-bottom: 1px solid gray;
+}
+
+.bottom-section img {
+     margin: 0 0 10px 0;
+}
+
+.bottom-section p {
+     font-size: 1.3em;
+     color: gray;
+     margin: 0 5px 0 5px;
+}
+
+.title-container h2 {
+     font-size: 2em;
+     font-weight: bold;
+}
+
+.title-container h3,
+.title-container span {
+     font-size: 16px;
+     color: gray;
+}

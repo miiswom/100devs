@@ -1,0 +1,30 @@
+*, 
+::before,
+::after {
+  box-sizing: border-box;
+  border: 1px solid gray;
+}
+
+body {
+  margin: 0 auto;
+  background: gainsboro;
+}
+
+header,
+footer {
+  width: 100%;
+  height: 20vh;
+  clear: both;
+}
+
+aside, section {
+  float: left;
+  width: 20%;
+  height: 60vh;
+}
+
+main {
+  float: left;
+  width: 40%;
+  height: 60vh;
+}

@@ -1,0 +1,249 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+     /* border: 1px solid red; */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/* body {
+
+} */
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+ background: black;
+ height: 50px;
+}
+
+/* footer {
+
+} */
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.bbc-logo {
+     width: 80px;
+     height: 30px;
+     background: white;
+     float: left;
+}
+
+.signin-logo {
+     margin: auto;
+     width: 30px;
+     height: 30px;
+     vertical-align: middle;
+     background: white;
+     border-radius: 50%;
+     float: left;
+}
+
+a {
+     color: white;
+     font-weight: bold;
+     text-align: center;
+}
+
+.signin {
+     float: left;
+     height: 50px;
+     line-height: 50px;     
+     color: white;
+     font-weight: bold;
+     margin-left: 20px;
+     margin-right: 80px;
+}
+
+li {
+     display: inline;
+
+}
+
+nav,
+.header-form {
+     float: left;
+}
+
+.header-form {
+     height: 50px;
+     line-height: 50px;
+     margin-left: 50px;
+}
+
+.header-images {
+     display: inline;
+     height: 50px;
+     float: left;
+     line-height: 50px;
+}
+
+.header-anchors {
+     padding: 30px;
+     margin: 0;
+     height: 50px;
+     border-right: 1px solid white;
+}
+
+.last-li-nav {
+     padding-right: 80px;
+}
+
+input::placeholder {
+     color: black;
+}
+
+form {
+     position: relative;
+}
+
+.search-icon {
+     position: absolute;
+     width: 18px;
+     top: 15px;
+     right: 10px;
+}
+
+.welcome {
+     float: left;
+     width: 100%;
+}
+
+h1.title {
+     float: left;
+     display: inline;
+     /* border: 1px solid red; */
+     text-align: start;
+     margin-left: 30px;
+
+}
+
+span.date {
+     float: right;
+     margin-right: 30px;
+     color: rgb(177, 173, 173);
+     font-weight: bold;
+     height: 80px;
+     line-height: 80px;
+     font-size: 32px;
+}
+
+.main-section {
+     position: relative;
+     float: left;
+     height: 420px;
+     width: 48%;
+     background: url(600x400.png) repeat 0 0;
+     /* border: 1px solid green; */
+     margin: 0 20px 20px 30px;
+}
+
+.main-section h1,
+.main-section p,
+.main-section h4,
+.right-sections h2,
+.right-sections h4 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.main-section h1 {
+     bottom: 60px;
+}
+
+.main-section p,
+.right-sections h2 {
+     bottom: 40px;
+}
+
+.main-section h4,
+.right-sections h4 {
+     bottom: 0px;
+}
+
+.right-main-section {
+     float: left;
+     width: 48%;
+     margin-left: 10px;
+}
+
+.right-sections {
+     float: left;
+     height: 200px;
+     width: 48%;
+     background: url(200x200.png) repeat 0 0;
+     /* border: 1px solid green; */
+     margin: 0 10px 20px 0;
+     position: relative;
+}
+
+.news-section {
+     float: left;
+     position: relative;
+     width: 98%;
+     margin: 0 20px 0 20px;
+}
+
+.news-section h2 {
+     margin-left: 15px;
+     padding-left: 15px;
+     border-left: 6px solid red;
+}
+
+.bottom-sections {
+     float: left;
+     width: 32%;
+     margin: 0 10px 0 10px;
+}
+
+.bottom-sections img {
+     width: 100%;
+}
+
+.bottom-sections h3 {
+     font-weight: bold;
+}
+
+@media all and (max-width:500px) {
+     a.header-anchors,
+     .header-form {
+          display: none;
+     }
+
+     .signin,
+     .signin-logo {
+          float: right;
+     }
+
+     .welcome,
+     .main-section,
+     .right-main-section,
+     .right-sections,
+     section.news-section > *{
+          float: left;
+          width: 100%;
+          margin: 0 auto;
+     }
+}

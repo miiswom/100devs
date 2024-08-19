@@ -1,0 +1,24 @@
+--- Nested Collections 
+to access a key in a nonexistent nested hash or array use the #dig method
+ARRAYS ----- Create a nested array collection
+- immutable = Array.new(3) { Array.new(2) }
+------ Change value
+- immutable[0][0] = 1000
+------ Add or remove el
+- use specific index with #push, shovel op, #pop, etc.
+------ Iterating over a nested array using the #each_with_index
+- row: nested el
+- column: index of nested el
+- *see pics
+------ Turning a collection into a one-dimentional
+- use #flatten
+HASHES ------ Accessing data
+- hash[:x][:y] 
+- ie, x is key of the hash / y is the key of the nested hash
+------ Add or remove data
+- hash[:newhashe] = { }
+- hash[:newhashe][:newkey] = "red"
+- hash.delete[:newhashe].delete(:newkey)
+- hash.delete(:newhashe)
+- #compact method returns an array (or hash) without nil values,
+ However, if we continue exploring the documentation, we will find another method that combines the functionality of these two methods. Ruby version 2.7 added a new enumerable method called #filter_map
