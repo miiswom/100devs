@@ -47,7 +47,7 @@ img {
 
 .modal {
   display: flex;
-  display: block;
+  justify-content: center;
   position: absolute;
   width: 80%;
   /*height: 100%;*/
@@ -92,4 +92,17 @@ img {
 
 .close:after {
   transform: rotate(-45deg);
+}
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  border: 3px solid green;
+  margin: 0 auto;
+}
+
+.savedBtn {
+  border: 1px solid white
 }

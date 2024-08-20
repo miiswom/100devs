@@ -108,50 +108,35 @@ function closingModal() {
   //mainContainer.style.filter = "blur(0px)"
 }
 
+// ===== localStorage =====
+
+const setSaveBtn = document.querySelector("#set-save");
+const getSaveBtn = document.querySelector("#get-save")
+setSaveBtn.addEventListener("click", setSavedCocktails )
+getSaveBtn.addEventListener("click", getSavedCocktails)
+
+const savedCocktailsList = document.querySelector("#saved-list")
+
+function setSavedCocktails() {
+  localStorage += localStorage.setItem(`${title.textContent}`, `${image.src}`)
+}
+
+function getSavedCocktails() {
+
+  const hiding = ["length", "clear", "getItem", "key", "removeItem", "setItem"]
+
+  for(let item in localStorage) {
+    //const li = document.createElement(li)
+    //savedCocktailsList.appendChild(li);
+    if(!hiding.includes(String([item])) && savedCocktailsList.children.length < localStorage.length) {
+      //console.log([item])
+      const link = document.createElement("a");
+      savedCocktailsList.appendChild(link);
+      link.textContent = [item]
+      link.src = 
+    }
+  }
+}
+
 // create a saveForLater  section
 // use localStorage to save favourites in saveForLater
-
-
-
-
-// fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${Number(id)}`)
-// .then(res => res.json())
-// .then(data => {
-//   console.log(data.drinks[0])
-//   /*instructions.textContent = data.drinks[0].strInstructions;
-//   title.textContent = data.drinks[0].strDrink
-//   image.src = data.drinks[0].strDrinkThumb*/
-// })
-
-//console.log(newImgArr)
-  
-// function creatingNewImgArr() {
-//   for(let i=0; i< imgArr.length; i++) {
-//     imgArr[i].addEventListener("click", getOk())
-//   }
-// }
-
-
-
-
-
-
-
-
-// function getDetails(para) {
-//   fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${para}`)
-//   .then(res => res.json())
-//   .then(data => {
-//       console.log(data.drinks[0].strIngredient)
-//     })
-// }
-// getDetails(12732)
-
-  // collect all the non-alcoholic drinks
-  // store all the non-alcoloholic drinks inside an array
-  // use the general cocktail api || 
-  // allow search by 1 main ingredients (extra: multiple ingredients)
-  // display all the non-alcoholic drinks that meet the ingredients criteria
-  // allow users to select the image he likes which also contains the title.
-  // clicking opens a new page
-  // with all the info about that drink
