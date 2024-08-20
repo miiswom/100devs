@@ -133,7 +133,6 @@ function getSavedCocktails() {
       const link = document.createElement("a");
       savedCocktailsList.appendChild(link);
       link.textContent = [item]
-      link.src = 
     }
   }
 }
