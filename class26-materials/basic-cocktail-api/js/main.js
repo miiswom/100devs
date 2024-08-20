@@ -76,7 +76,8 @@ function addingEvent() {
         console.log(data.drinks[0].idDrink)
         console.log("ingredients" + data.drinks[0].strIngredient1)
         
-        cocktailInfo.classList.replace("hidden", "modal")
+        cocktailInfo.classList.toggle("modal") 
+        //("hidden", "modal")
 
         let ingredientsArr = []
         for (let key in data.drinks[0]) {
@@ -98,6 +99,18 @@ function addingEvent() {
       })    })
   })
 }
+
+const closeModal = document.querySelector("#modal-close");
+closeModal.addEventListener("click", closingModal);
+
+function closingModal() {
+  cocktailInfo.classList.toggle("modal") 
+  //mainContainer.style.filter = "blur(0px)"
+}
+
+// create a saveForLater  section
+// use localStorage to save favourites in saveForLater
+
 
 
 
